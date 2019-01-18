@@ -111,7 +111,7 @@
     	分页拦截器
     	<mvc:interceptor>
 	    	<mvc:mapping path="/**" />
-	    	<bean class="com.zml.oa.interceptor.PaginationInterceptor" />
+	    	<bean class="PaginationInterceptor" />
     	</mvc:interceptor>
     	设置国际化信息的拦截器
     	<mvc:interceptor>
@@ -132,7 +132,7 @@
 		com.hdc.interceptors.DefaultMultipartResolver
 	-->
 	<bean id="multipartResolver"
-		class="com.zml.oa.interceptor.DefaultMultipartResolver">
+		class="zml.interceptor.DefaultMultipartResolver">
 	 	<property name="maxInMemorySize">
 			<value>104857600</value><!-- 最大10M -->
 		</property>
